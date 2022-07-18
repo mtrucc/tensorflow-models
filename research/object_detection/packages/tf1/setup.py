@@ -3,9 +3,29 @@ import os
 from setuptools import find_packages
 from setuptools import setup
 
-REQUIRED_PACKAGES = ['pillow', 'lxml', 'matplotlib', 'Cython',
-                     'contextlib2', 'tf-slim', 'six', 'pycocotools', 'lvis',
-                     'scipy', 'pandas']
+REQUIRED_PACKAGES = [
+    # Required for apache-beam with PY3
+    'avro-python3==1.10.1',
+    'apache-beam',
+    'pillow',
+    'lxml',
+    'matplotlib',
+    'Cython',
+    'contextlib2',
+    'tf-slim==1.1.0',
+    'six',
+    'pycocotools',
+    'lvis==0.5.3',
+    'scipy',
+    'pandas',
+    'tf-models-official==2.5.1',
+    'tensorflow_io',
+    # Workaround due to
+    # https://github.com/keras-team/keras/issues/15583
+    'keras',
+    'opencv-python-headless==4.5.1.48',
+    'tensorflow==2.8.0',
+]
 
 setup(
     name='object_detection',
