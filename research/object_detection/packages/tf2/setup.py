@@ -8,25 +8,21 @@ from setuptools import setup
 # oauth2client package.
 REQUIRED_PACKAGES = [
     # Required for apache-beam with PY3
-    'avro-python3==1.10.1',
+    'avro-python3',
     'apache-beam',
     'pillow',
     'lxml',
     'matplotlib',
     'Cython',
     'contextlib2',
-    'tf-slim==1.1.0',
+    'tf-slim',
     'six',
     'pycocotools',
-    'lvis==0.5.3',
+    'lvis',
     'scipy',
     'pandas',
-    'tf-models-official==2.5.1',
+    'tf-models-official>=2.5.1',
     'tensorflow_io',
-    # Workaround due to
-    # https://github.com/keras-team/keras/issues/15583
-    # 'keras',
-    'opencv-python-headless==4.5.1.48',
     'tensorflow==2.8.0',
 ]
 
