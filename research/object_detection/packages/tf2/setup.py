@@ -22,6 +22,8 @@ REQUIRED_PACKAGES = [
     'scipy',
     'pandas',
     'tf-models-official>=2.5.1',
+    'opencv-python-headless==4.5.1.48',
+    'tensorflow==2.5.0',
 ]
 
 setup(
